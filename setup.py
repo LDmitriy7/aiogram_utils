@@ -14,7 +14,7 @@ def get_requirements():
 
 setup(
     name='aiogram_utils',
-    version='0.0.1',
+    version='0.0.3',
     url='https://github.com/LDmitriy7/aiogram_utils',
 
     python_requires='>=3.7',
