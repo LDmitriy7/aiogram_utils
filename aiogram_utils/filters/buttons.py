@@ -49,6 +49,9 @@ class AbstractButtonFilter(BoundFilter):
             if match:
                 return {'button': match.groupdict()}
 
+        if button_regexp == self.cast_button(update_obj):
+            return {'button': {}}
+
     async def check(self, update_obj) -> Union[dict, bool]:
         for regexp in self.buttons_regexps:
             result = self.check_one(update_obj, regexp)
