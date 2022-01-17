@@ -49,7 +49,7 @@ class AbstractButtonFilter(BoundFilter):
             if match:
                 return {'button': match.groupdict()}
 
-        if button_regexp == self.cast_button(update_obj):
+        if button_regexp == self.cast_update(update_obj):
             return {'button': {}}
 
     async def check(self, update_obj) -> Union[dict, bool]:
