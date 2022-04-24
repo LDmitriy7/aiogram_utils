@@ -8,7 +8,7 @@ def get_description():
 
 setup(
     name='aiogram_utils',
-    version='0.0.11',
+    version='0.0.12',
     url='https://github.com/LDmitriy7/aiogram_utils',
 
     python_requires='>=3.7',
