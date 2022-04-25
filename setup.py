@@ -8,14 +8,14 @@ def get_description():
 
 setup(
     name='aiogram_utils',
-    version='0.0.12',
+    version='0.0.13',
     url='https://github.com/LDmitriy7/aiogram_utils',
 
     python_requires='>=3.7',
     packages=find_packages(exclude=('tests', 'tests.*', 'examples.*', 'docs',)),
     install_requires=[
-        'aiogram==2.18',
-        'mongoengine==0.23.1',
+        'aiogram==2.20',
+        'mongoengine==0.24.1',
     ],
     license='MIT',
     author='LDmitriy7',
